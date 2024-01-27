@@ -16,13 +16,9 @@ export class AppComponent {
   public value: number | null = null;
   public apiReturn: AppModel | null = null;
 
-  onKeyup(event: any) {
-    this.value = event.target.value;
-  }
-
   onClickCalcular() {
     if (this.value === null) {
-      alert('Favor inserir um valor válido para o cálculo');
+      alert('Favor inserir um valor válido para o cálculo!');
       return;
     }
 
