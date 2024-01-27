@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CalculatePercentageService } from './app.service';
+import { AppService } from './app.service';
 import { AppModel } from './app.model';
 import { FormsModule } from '@angular/forms';
 
@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  constructor(private service: CalculatePercentageService) {
+  constructor(private service: AppService) {
   }
   public value: number | null = null;
   public apiReturn: AppModel | null = null;
