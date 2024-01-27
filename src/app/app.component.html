@@ -1,0 +1,21 @@
+<main>
+  <h1>Calcular porcentagem</h1>
+
+  <section>
+    <label>
+      Cálculo porcentagem:
+      <input type="text" inputMode="numeric" pattern="[0-9]*" [(ngModel)]="value" (keyup)="onKeyup($event)" />
+    </label>
+
+    <div>
+      <button type="button" (click)="onClickCalcular()">Calcular</button>
+      <button type="button" (click)="onClickLimpar()">Limpar</button>
+    </div>
+  </section>
+
+  <div>
+    <h2>Valor de cada um:</h2>
+    <pre>Letícia: R${{apiReturn?.Leticia || '0,00'}}</pre>
+    <pre>Bruno: R${{apiReturn?.Bruno || '0,00'}}</pre>
+  </div>
+</main>
