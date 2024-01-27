@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CalculatePercentageService } from './calculate-percentage.service';
+import { CalculatePercentageService } from './app.service';
 import { AppModel } from './app.model';
 import { FormsModule } from '@angular/forms';
 
