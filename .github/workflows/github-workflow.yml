@@ -15,3 +15,12 @@ jobs:
     with:
       image: brunobrasolin/front-bills-calculate-percentage
     secrets: inherit
+
+  CD:
+    needs: CI
+    uses: BrunoBrasolin/workflow-template/.github/workflows/angular-docker-cd.yml@main
+    with:
+      dockerAccount: brunobrasolin
+      applicationName: front-bills-calculate-percentage
+      port: 4211
+    secrets: inherit
