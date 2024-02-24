@@ -11,6 +11,6 @@ export class AppService {
   constructor(private http: HttpClient) { }
 
   public CalculatePercentage(value: number): Observable<AppModel> {
-    return this.http.get<AppModel>(`https://localhost:32768/api/conta?valor=${value}`)
+    return this.http.get<AppModel>(`http://168.75.82.21:81/api/conta?valor=${value}`)
   }
 }
